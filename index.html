@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is het BBQ-weer vandaag?</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: Georgia, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+	            background: linear-gradient(-45deg, #ee7752, #b82b3e, #db7133, #e97735);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+
+            }
+            p {
+                margin: 0;
+            }
+            .small {
+                color: #111;
+            }
+            .big {
+                color: #112;
+                font-size: 156px;
+                font-weight: bold;
+                margin-bottom: 100px;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="small">Is het barbecue-weer vandaag?</p>
+            <p class="big">Ja!</p>
+        </div>
+    </body>
+</html>
